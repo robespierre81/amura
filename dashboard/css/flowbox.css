@@ -1,0 +1,18 @@
+/* flowbox.css */
+
+#flowbox_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/images/amura_grid_1x.png");
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+
+#flowbox_1 {
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign-up - Amura Holding LLC</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Sign-up - Amura Holding LLC">
+    <meta name="description" content="Sign-up - Amura AI3 Holding LLC">
+    <meta name="generator" content="Sign-up - Amura AI3 Holding LLC">
+    <meta property="og:title" content="Sign-up - Amura AI3 Holding LLC">
+    <meta property="og:description" content="Sign-up - Amura AI3 Holding LLC">
+    <meta property="og:image" content="https://www.amura.io/images/Amura_Favicon.png">
+    <meta property="og:url" content="https://www.amura.io/signup.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/Amura_Favicon.png">
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <div class="centered" style="padding-bottom: 80px; width: 260px;">
+        <img class="logo" src="dashboard/images/amura_logo_w_text.svg" alt="Logo">
+        <br><br>
+        <p class="welcome-text">Your AMURA Business Partner can <br>provide you with a sign-up code.</p>
+        <br>
+        <label for="signup-code" class="signup-label">My AMURA Sign-up Code:</label><br>
+        <input type="password" id="signup-code" name="signup-code" class="signup-input" placeholder="______">
+        <button onClick="" class="btn-primary">Ready to sign up</button><br>
+        <br>
+         <button onclick="location.href='login.html'" class="btn-secondary">Use ID.Amura for login</button><br>
+    </div>
+
+    <div class="bottom-links" style="height: 80px;">
+        <a href="#">Terms of use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Privacy policy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://dashboard.amura.io">DAO</a>
+    </div>
+    
+    <script>
+        const inputField = document.getElementById('signup-code');
+        inputField.addEventListener('input', () => {
+            const value = inputField.value;
+            const placeholder = "______";
+            const placeholderText = placeholder.slice(0, value.length);
+            inputField.placeholder = placeholderText;
+        });
+    </script>
+</body>
+</html>
