@@ -1,50 +1,47 @@
 /* dashboard.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-/* Root and Body - also change values in theme toggle.js */
+
+/* Root and Body - Theme Variables */
 :root {
-
-/* Body CSS var */
+  /* Body CSS var */
   --text-color: #ffffff;
+  --logo-text-color: #96ca0d;
   --background-color: #0d1116;
   --background-color-header: #000000;
     
-/* Box CSS var */
+  /* Box CSS var */
   --box-outline-color: #2f363c;
-  --box-bg-color-dark: #000000; 
+  --box-bg-color-dark: #000000;
   --box-bg-color-light: #c1c1c1;
 
-/* Forms CSS var */
+  /* Forms CSS var */
   --font-size-label: 13px;
   --font-size-input: 15px;
   --button-bg-normal-color: #121d2d;
   --button-bg-hover-color: #1e4a7f;
-  --button-outline-hover-color: 15px;
-  --button-text-color: 15px;
 }
 
+/* Body and Global Styles */
 body {
   font-family: 'Open Sans', sans-serif;
   color: var(--text-color);
   background-color: var(--background-color);
-  font-size: 13px !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
 }
 
-/* Links */
 a {
   color: var(--link-color);
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
 }
 
 a:hover {
-  font-weight: bold;
+  font-weight: 700;
 }
-
-
 
 /* Main Layout */
 #dashboard {
@@ -59,15 +56,13 @@ a:hover {
   overflow: auto;
   flex-grow: 1;
   min-height: 100vh;
-  border-left: 1px solid var(--box-outline-color);
-
 }
 
 #content {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-  overflow-y: auto; /* Enable scrolling for the main content */
+  overflow-y: auto;
 }
 
 /* Header */
@@ -75,13 +70,16 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 60px; /* if change here also change #sidebar height calculation 100vH - */
-  width: 100%;
-  border-bottom: 1px solid var(--box-outline-color);
+  min-height: 60px;
+  width: calc(100% - 20px);
+  border: 1px solid var(--box-outline-color);
+  border-radius: 10px;
+  margin: 10px 10px 0;
   position: sticky;
   top: 0;
   background-color: var(--background-color-header);
   z-index: 1;
+  overflow-y: auto;
 }
 
 /* Logo */
@@ -100,42 +98,59 @@ a:hover {
   height: 15px;
 }
 
+#logo-text {
+  color: var(--logo-text-color);
+  font-weight: 700;
+}
+
+
 /* Sidebar */
 #sidebar {
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
-  min-width: 200px;
-  max-width: 300px;
+  flex: 1; /* This allows the sidebar to grow relative to other flex items */
+  min-width: 220px; /* Minimum width */
+  max-width: 250px; /* Maximum width */
   position: sticky;
   top: 0;
-  height: calc(100vh - 60px); /* -value depends on height of #header min-height */
+  height: calc(100vh - 80px);
+  overflow-y: auto;
 }
 
 /* Menu */
 .menu {
-  width: 100%;
+  width: calc(100% - 10px);
+  padding: 0 0 5px 10px;
   background-color: var(--background-color);
-      justify-content: center;
+  justify-content: center;
 }
 
 .menu .item {
-  padding: 10px;
-  width: 100%;
+  padding: 10px 18px 10px;
+  width: calc(100% - 8px);
   box-sizing: border-box;
-  display: block;
-  border-bottom: 1px solid var(--box-outline-color);
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--box-outline-color);
+  border-radius: 10px;
+  margin: 0 5px 5px 0;
+}
+
+.menu .item:first-child {
+  margin-top: 10px;
+}
+
+.menu .item:last-child {
+  margin-bottom: 20px;
 }
 
 .menu .icon-item {
   display: flex;
   align-items: center;
-}
-
-.menu .item:last-child {
-  border-bottom: 1px solid var(--box-outline-color);
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .menu .item:hover {
@@ -169,4 +184,11 @@ a:hover {
 
 #dark-theme-icon {
   display: none;
+}
+
+
+@media (max-width: 768px) {
+  #sidebar {
+    max-width: 230px; /* Maximum width for smaller screens */
+  }
 }

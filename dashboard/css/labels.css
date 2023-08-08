@@ -1,3 +1,172 @@
 
 /* labels */
 
+.tag-icon-blue-full {
+  display: inline-block;
+  font-weight: 700;
+  font-size: var(--font-size-label);
+  color: #fff;
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 0.4rem 0.7rem;
+  border-radius: 10px;
+  border-style: none;
+  border: 1px solid #1e4a7f;
+  z-index: 1;
+  overflow: hidden;
+  background-color: var(--button-bg-normal-color);
+  transition: padding 0.3s ease, transform 0.3s ease;
+}
+
+.tag-icon-blue-full:hover {
+
+}
+
+.tag-icon-red-full {
+  display: inline-block;
+  font-weight: 700;
+  font-size: var(--font-size-label);
+  color: #fff;
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 0.4rem 0.7rem;
+  border-radius: 10px;
+  border-style: none;
+  border: 1px solid #FF6A6A;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #CB1B1B;
+  transition: padding 0.3s ease, transform 0.3s ease;
+}
+
+.tag-icon-red-full:hover {
+
+}
+
+
+.tag-icon-green-full {
+  display: inline-block;
+  font-weight: 700;
+  font-size: var(--font-size-label);
+  color: #fff;
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 0.4rem 0.7rem;
+  border-radius: 10px;
+  border-style: none;
+  border: 1px solid #44A240;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #1D7119;
+  transition: padding 0.3s ease, transform 0.3s ease;
+}
+
+.tag-icon-green-full:hover {
+
+}
+
+
+.tag-icon-black {
+  display: inline-block;
+  font-weight: 700;
+  background-color: transparent;
+  outline: 1px solid var(--box-outline-color);
+  padding: 0.4rem 0.9rem;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-right: 5px;
+  font-size: var(--font-size-label);
+  color: var(--text-color);
+  transition: padding 0.3s ease, transform 0.3s ease;
+}
+
+.div-full-outline .tag-icon-black:hover {
+  background-color: transparent;
+  outline-color: var(--box-outline-color);
+
+}
+
+
+.tag-icon-green {
+  display: inline-block;
+  font-weight: 700;
+  background-color: transparent;
+  outline: 1px solid #228B22;
+  padding: 0.4rem 0.9rem;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-right: 5px;
+  font-size: var(--font-size-label);
+  color: var(--text-color);
+  transition: padding 0.3s ease, transform 0.3s ease;
+}
+
+.div-full-outline .tag-icon-green:hover {
+  background-color: transparent;
+  outline-color: #32CD32; 
+
+}
+
+
+
+.tag-icon-purple {
+  display: inline-block;
+  font-weight: 700;
+  background-color: transparent;
+  outline: 1px solid #C533D8; 
+  padding: 0.4rem 0.9rem;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-right: 5px;
+  font-size: var(--font-size-label);
+  color: #C533D8;
+  transition: padding 0.3s ease, transform 0.3s ease;
+}
+
+.div-full-outline .tag-icon-purple:hover {
+  background-color: transparent;
+  outline-color: #C533D8; 
+
+}
+
+
+
+.tag-icon-purple-solid {
+  display: inline-block;
+  font-weight: 700;
+  background-color: #C533D8;
+  outline: 1px solid #C533D8; 
+  padding: 0.2rem 0.5rem;
+  border-radius: 15px;
+  margin-top: 0px;
+  margin-right: 5px;
+  font-size: calc(var(--font-size-label) * 0.7);
+  color: white;
+}
+
+.tag-icon-black-solid {
+  display: inline-block;
+  font-weight: 700;
+  background-color: transparent;
+  outline: 1px solid var(--box-outline-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 15px;
+  margin-top: 0px;
+  margin-right: 5px;
+  font-size: calc(var(--font-size-label) * 0.8);
+  color: var(--text-color);
+}
+
+
+.tag-icon-red-solid {
+  display: inline-block;
+  background-color: #CB1B1B;
+  outline: 1px solid var(--box-outline-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 15px;
+  margin-top: 0px;
+  margin-right: 5px;
+  font-size: calc(var(--font-size-label) * 0.8);
+  font-weight: bold;
+  color: white;
+}

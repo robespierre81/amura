@@ -1,0 +1,81 @@
+
+/* chat elements */
+
+
+/* comment in / out for red outline around all objects for testing 
+* {
+  outline: 1px solid red;
+}
+
+*/
+
+
+#messageContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 5px;
+
+}
+
+#chatContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+#chatContainer .message {
+  max-width: 80%; /* So messages don't stretch too far across the screen */
+  color: var(--text-color);
+  padding: 0px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#chatContainer .message.other {
+  align-self: flex-start; /* Left align these messages */
+}
+
+#chatContainer .message.self {
+  align-self: flex-end; /* Right align these messages */
+}
+
+.message {
+  max-width: 80%; /* So messages don't stretch too far across the screen */
+  color: var(--text-color);
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.message.left {
+  align-self: flex-start; /* Left align these messages */
+}
+
+.message.right {
+  align-self: flex-end; /* Right align these messages */
+  text-align: right;
+}
+
+.meta {
+  font-size: 0.7em; /* Smaller than normal text */
+  color: #bbb; /* Light grey */
+  margin-bottom: 1px; /* Small gap between meta and content */
+}
+
+#inputContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#messageInput {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+#sendButton {
+  padding: 5px 10px;
+}

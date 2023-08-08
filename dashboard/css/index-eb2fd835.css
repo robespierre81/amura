@@ -1,96 +1,101 @@
-.react-flow__container{
+#theflowdashboard .react-flow__container{
     position:absolute;
     width:100%;
     height:100%;
     top:0;
     left:0
 }
-.react-flow__pane{
+#theflowdashboard .react-flow__pane{
     z-index:1;
     cursor:-webkit-grab;
     cursor:grab
 }
-.react-flow__pane.selection{
+#theflowdashboard .react-flow__pane.selection{
     cursor:pointer
 }
-.react-flow__pane.dragging{
+#theflowdashboard .react-flow__pane.dragging{
     cursor:-webkit-grabbing;
     cursor:grabbing
 }
-.react-flow__viewport{
+#theflowdashboard .react-flow__viewport{
     transform-origin:0 0;
     z-index:2;
     pointer-events:none
 }
-.react-flow__renderer{
+#theflowdashboard .react-flow__renderer{
     z-index:4
 }
-.react-flow__selection{
+#theflowdashboard .react-flow__selection{
     z-index:6
 }
-.react-flow__nodesselection-rect:focus,.react-flow__nodesselection-rect:focus-visible{
+#theflowdashboard .react-flow__nodesselection-rect:focus,
+#theflowdashboard .react-flow__nodesselection-rect:focus-visible{
     outline:none
 }
-.react-flow .react-flow__edges{
+#theflowdashboard .react-flow .react-flow__edges{
     pointer-events:none;
     overflow:visible
 }
-.react-flow__edge-path,.react-flow__connection-path{
+#theflowdashboard .react-flow__edge-path,
+#theflowdashboard .react-flow__connection-path{
     stroke:#b1b1b7;
     stroke-width:1;
     fill:none
 }
-.react-flow__edge{
+#theflowdashboard .react-flow__edge{
     pointer-events:visibleStroke;
     cursor:pointer
 }
-.react-flow__edge.animated path{
+#theflowdashboard .react-flow__edge.animated path{
     stroke-dasharray:5;
     -webkit-animation:dashdraw .5s linear infinite;
     animation:dashdraw .5s linear infinite
 }
-.react-flow__edge.animated path.react-flow__edge-interaction{
+#theflowdashboard .react-flow__edge.animated path.react-flow__edge-interaction{
     stroke-dasharray:none;
     -webkit-animation:none;
     animation:none
 }
-.react-flow__edge.inactive{
+#theflowdashboard .react-flow__edge.inactive{
     pointer-events:none
 }
-.react-flow__edge.selected,.react-flow__edge:focus,.react-flow__edge:focus-visible{
+#theflowdashboard .react-flow__edge.selected,
+#theflowdashboard .react-flow__edge:focus,.react-flow__edge:focus-visible{
     outline:none
 }
-.react-flow__edge.selected .react-flow__edge-path,.react-flow__edge:focus .react-flow__edge-path,.react-flow__edge:focus-visible .react-flow__edge-path{
+#theflowdashboard .react-flow__edge.selected .react-flow__edge-path,
+#theflowdashboard .react-flow__edge:focus .react-flow__edge-path,
+#theflowdashboard .react-flow__edge:focus-visible .react-flow__edge-path{
     stroke:#555
 }
-.react-flow__edge-textwrapper{
+#theflowdashboard .react-flow__edge-textwrapper{
     pointer-events:all
 }
-.react-flow__edge-textbg{
+#theflowdashboard .react-flow__edge-textbg{
     fill:#fff
 }
-.react-flow__edge .react-flow__edge-text{
+#theflowdashboard .react-flow__edge .react-flow__edge-text{
     pointer-events:none;
     -webkit-user-select:none;
     -moz-user-select:none;
     user-select:none
 }
-.react-flow__connection{
+#theflowdashboard .react-flow__connection{
     pointer-events:none
 }
-.react-flow__connection .animated{
+#theflowdashboard .react-flow__connection .animated{
     stroke-dasharray:5;
     -webkit-animation:dashdraw .5s linear infinite;
     animation:dashdraw .5s linear infinite
 }
-.react-flow__connectionline{
+#theflowdashboard .react-flow__connectionline{
     z-index:1001
 }
-.react-flow__nodes{
+#theflowdashboard .react-flow__nodes{
     pointer-events:none;
     transform-origin:0 0
 }
-.react-flow__node{
+#theflowdashboard .react-flow__node{
     position:absolute;
     -webkit-user-select:none;
     -moz-user-select:none;
@@ -101,22 +106,22 @@
     cursor:-webkit-grab;
     cursor:grab
 }
-.react-flow__node.dragging{
+#theflowdashboard .react-flow__node.dragging{
     cursor:-webkit-grabbing;
     cursor:grabbing
 }
-.react-flow__nodesselection{
+#theflowdashboard .react-flow__nodesselection{
     z-index:3;
     transform-origin:left top;
     pointer-events:none
 }
-.react-flow__nodesselection-rect{
+#theflowdashboard .react-flow__nodesselection-rect{
     position:absolute;
     pointer-events:all;
     cursor:-webkit-grab;
     cursor:grab
 }
-.react-flow__handle{
+#theflowdashboard .react-flow__handle{
     position:absolute;
     pointer-events:none;
     min-width:5px;
@@ -127,63 +132,63 @@
     border:1px solid white;
     border-radius:100%
 }
-.react-flow__handle.connectionindicator{
+#theflowdashboard .react-flow__handle.connectionindicator{
     pointer-events:all;
     cursor:crosshair
 }
-.react-flow__handle-bottom{
+#theflowdashboard .react-flow__handle-bottom{
     top:auto;
     left:50%;
     bottom:-4px;
     transform:translate(-50%)
 }
-.react-flow__handle-top{
+#theflowdashboard .react-flow__handle-top{
     left:50%;
     top:-4px;
     transform:translate(-50%)
 }
-.react-flow__handle-left{
+#theflowdashboard .react-flow__handle-left{
     top:50%;
     left:-4px;
     transform:translateY(-50%)
 }
-.react-flow__handle-right{
+#theflowdashboard .react-flow__handle-right{
     right:-4px;
     top:50%;
     transform:translateY(-50%)
 }
-.react-flow__edgeupdater{
+#theflowdashboard .react-flow__edgeupdater{
     cursor:move;
     pointer-events:all
 }
-.react-flow__panel{
+#theflowdashboard .react-flow__panel{
     position:absolute;
     z-index:5;
     margin:15px
 }
-.react-flow__panel.top{
+#theflowdashboard .react-flow__panel.top{
     top:0
 }
-.react-flow__panel.bottom{
+#theflowdashboard .react-flow__panel.bottom{
     bottom:0
 }
-.react-flow__panel.left{
+#theflowdashboard .react-flow__panel.left{
     left:0
 }
-.react-flow__panel.right{
+#theflowdashboard .react-flow__panel.right{
     right:0
 }
-.react-flow__panel.center{
+#theflowdashboard .react-flow__panel.center{
     left:50%;
     transform:translate(-50%)
 }
-.react-flow__attribution{
+#theflowdashboard .react-flow__attribution{
     font-size:10px;
     background:rgba(255,255,255,.5);
     padding:2px 3px;
     margin:0
 }
-.react-flow__attribution a{
+#theflowdashboard .react-flow__attribution a{
     text-decoration:none;
     color:#999
 }
@@ -197,7 +202,7 @@
         stroke-dashoffset:10
     }
 }
-.react-flow__edgelabel-renderer{
+#theflowdashboard .react-flow__edgelabel-renderer{
     position:absolute;
     width:100%;
     height:100%;
@@ -206,16 +211,20 @@
     -moz-user-select:none;
     user-select:none
 }
-.react-flow__edge.updating .react-flow__edge-path{
+#theflowdashboard .react-flow__edge.updating .react-flow__edge-path{
     stroke:#777
 }
-.react-flow__edge-text{
+#theflowdashboard .react-flow__edge-text{
     font-size:10px
 }
-.react-flow__node.selectable:focus,.react-flow__node.selectable:focus-visible{
+#theflowdashboard .react-flow__node.selectable:focus,
+#theflowdashboard .react-flow__node.selectable:focus-visible{
     outline:none
 }
-.react-flow__node-default,.react-flow__node-input,.react-flow__node-output,.react-flow__node-group{
+#theflowdashboard .react-flow__node-default,
+#theflowdashboard .react-flow__node-input,
+#theflowdashboard .react-flow__node-output,
+#theflowdashboard .react-flow__node-group{
     padding:10px;
     border-radius:3px;
     width:150px;
@@ -227,26 +236,44 @@
     border-color:#1a192b;
     background-color:#fff
 }
-.react-flow__node-default.selectable:hover,.react-flow__node-input.selectable:hover,.react-flow__node-output.selectable:hover,.react-flow__node-group.selectable:hover{
+#theflowdashboard .react-flow__node-default.selectable:hover,
+#theflowdashboard .react-flow__node-input.selectable:hover,
+#theflowdashboard .react-flow__node-output.selectable:hover,
+#theflowdashboard .react-flow__node-group.selectable:hover{
     box-shadow:0 1px 4px 1px #00000014
 }
-.react-flow__node-default.selectable.selected,.react-flow__node-default.selectable:focus,.react-flow__node-default.selectable:focus-visible,.react-flow__node-input.selectable.selected,.react-flow__node-input.selectable:focus,.react-flow__node-input.selectable:focus-visible,.react-flow__node-output.selectable.selected,.react-flow__node-output.selectable:focus,.react-flow__node-output.selectable:focus-visible,.react-flow__node-group.selectable.selected,.react-flow__node-group.selectable:focus,.react-flow__node-group.selectable:focus-visible{
+#theflowdashboard .react-flow__node-default.selectable.selected,
+#theflowdashboard .react-flow__node-default.selectable:focus,
+#theflowdashboard .react-flow__node-default.selectable:focus-visible,
+#theflowdashboard .react-flow__node-input.selectable.selected,
+#theflowdashboard .react-flow__node-input.selectable:focus,
+#theflowdashboard .react-flow__node-input.selectable:focus-visible,
+#theflowdashboard .react-flow__node-output.selectable.selected,
+#theflowdashboard .react-flow__node-output.selectable:focus,
+#theflowdashboard .react-flow__node-output.selectable:focus-visible,
+#theflowdashboard .react-flow__node-group.selectable.selected,
+#theflowdashboard .react-flow__node-group.selectable:focus,
+#theflowdashboard .react-flow__node-group.selectable:focus-visible{
     box-shadow:0 0 0 .5px #1a192b
 }
-.react-flow__node-group{
+#theflowdashboard .react-flow__node-group{
     background-color:#f0f0f040
 }
-.react-flow__nodesselection-rect,.react-flow__selection{
+#theflowdashboard .react-flow__nodesselection-rect,
+#theflowdashboard .react-flow__selection{
     background:rgba(0,89,220,.08);
     border:1px dotted rgba(0,89,220,.8)
 }
-.react-flow__nodesselection-rect:focus,.react-flow__nodesselection-rect:focus-visible,.react-flow__selection:focus,.react-flow__selection:focus-visible{
+#theflowdashboard .react-flow__nodesselection-rect:focus,
+#theflowdashboard .react-flow__nodesselection-rect:focus-visible,
+#theflowdashboard .react-flow__selection:focus,
+#theflowdashboard .react-flow__selection:focus-visible{
     outline:none
 }
-.react-flow__controls{
+#theflowdashboard .react-flow__controls{
     box-shadow:0 0 2px 1px #00000014
 }
-.react-flow__controls-button{
+#theflowdashboard .react-flow__controls-button{
     border:none;
     background:#fefefe;
     border-bottom:1px solid #eee;
@@ -262,39 +289,43 @@
     user-select:none;
     padding:5px
 }
-.react-flow__controls-button:hover{
+#theflowdashboard .react-flow__controls-button:hover{
     background:#f4f4f4
 }
-.react-flow__controls-button svg{
+#theflowdashboard .react-flow__controls-button svg{
     width:100%;
     max-width:12px;
     max-height:12px
 }
-.react-flow__controls-button:disabled{
+#theflowdashboard .react-flow__controls-button:disabled{
     pointer-events:none
 }
-.react-flow__controls-button:disabled svg{
+#theflowdashboard .react-flow__controls-button:disabled svg{
     fill-opacity:.4
 }
-.react-flow__minimap{
+#theflowdashboard .react-flow__minimap{
     background-color:#fff
 }
-.react-flow__resize-control{
+#theflowdashboard .react-flow__resize-control{
     position:absolute
 }
-.react-flow__resize-control.left,.react-flow__resize-control.right{
+#theflowdashboard .react-flow__resize-control.left,
+#theflowdashboard .react-flow__resize-control.right{
     cursor:ew-resize
 }
-.react-flow__resize-control.top,.react-flow__resize-control.bottom{
+#theflowdashboard .react-flow__resize-control.top,
+#theflowdashboard .react-flow__resize-control.bottom{
     cursor:ns-resize
 }
-.react-flow__resize-control.top.left,.react-flow__resize-control.bottom.right{
+#theflowdashboard .react-flow__resize-control.top.left,
+#theflowdashboard .react-flow__resize-control.bottom.right{
     cursor:nwse-resize
 }
-.react-flow__resize-control.bottom.left,.react-flow__resize-control.top.right{
+#theflowdashboard .react-flow__resize-control.bottom.left,
+#theflowdashboard .react-flow__resize-control.top.right{
     cursor:nesw-resize
 }
-.react-flow__resize-control.handle{
+#theflowdashboard .react-flow__resize-control.handle{
     width:4px;
     height:4px;
     border:1px solid #fff;
@@ -302,58 +333,62 @@
     background-color:#3367d9;
     transform:translate(-50%,-50%)
 }
-.react-flow__resize-control.handle.left{
+#theflowdashboard .react-flow__resize-control.handle.left{
     left:0;
     top:50%
 }
-.react-flow__resize-control.handle.right{
+#theflowdashboard .react-flow__resize-control.handle.right{
     left:100%;
     top:50%
 }
-.react-flow__resize-control.handle.top{
+#theflowdashboard .react-flow__resize-control.handle.top{
     left:50%;
     top:0
 }
-.react-flow__resize-control.handle.bottom{
+#theflowdashboard .react-flow__resize-control.handle.bottom{
     left:50%;
     top:100%
 }
-.react-flow__resize-control.handle.top.left,.react-flow__resize-control.handle.bottom.left{
+#theflowdashboard .react-flow__resize-control.handle.top.left,
+#theflowdashboard .react-flow__resize-control.handle.bottom.left{
     left:0
 }
-.react-flow__resize-control.handle.top.right,.react-flow__resize-control.handle.bottom.right{
+#theflowdashboard .react-flow__resize-control.handle.top.right,
+#theflowdashboard .react-flow__resize-control.handle.bottom.right{
     left:100%
 }
-.react-flow__resize-control.line{
+#theflowdashboard .react-flow__resize-control.line{
     border-color:#3367d9;
     border-width:0;
     border-style:solid
 }
-.react-flow__resize-control.line.left,.react-flow__resize-control.line.right{
+#theflowdashboard .react-flow__resize-control.line.left,
+#theflowdashboard .react-flow__resize-control.line.right{
     width:1px;
     transform:translate(-50%);
     top:0;
     height:100%
 }
-.react-flow__resize-control.line.left{
+#theflowdashboard .react-flow__resize-control.line.left{
     left:0;
     border-left-width:1px
 }
-.react-flow__resize-control.line.right{
+#theflowdashboard .react-flow__resize-control.line.right{
     left:100%;
     border-right-width:1px
 }
-.react-flow__resize-control.line.top,.react-flow__resize-control.line.bottom{
+#theflowdashboard .react-flow__resize-control.line.top,
+#theflowdashboard .react-flow__resize-control.line.bottom{
     height:1px;
     transform:translateY(-50%);
     left:0;
     width:100%
 }
-.react-flow__resize-control.line.top{
+#theflowdashboard .react-flow__resize-control.line.top{
     top:0;
     border-top-width:1px
 }
-.react-flow__resize-control.line.bottom{
+#theflowdashboard .react-flow__resize-control.line.bottom{
     border-bottom-width:1px;
     top:100%
 }
@@ -370,12 +405,12 @@
     -moz-osx-font-smoothing:grayscale;
     -webkit-text-size-adjust:100%
 }
-a{
+#theflowdashboard a{
     font-weight:500;
     color:#646cff;
     text-decoration:inherit
 }
-a:hover{
+#theflowdashboard a:hover{
     color:#535bf2
 }
 #theflowdashboard{
@@ -386,11 +421,11 @@ a:hover{
     min-height:100vh;
     width: 100vh;
 }
-h1{
+#theflowdashboard h1{
     font-size:3.2em;
     line-height:1.1
 }
-button{
+#theflowdashboard button{
     border-radius:8px;
     border:1px solid transparent;
     padding:.6em 1.2em;
@@ -401,23 +436,27 @@ button{
     cursor:pointer;
     transition:border-color .25s
 }
-button:hover{
+#theflowdashboard button:hover{
     border-color:#646cff
 }
-button:focus,button:focus-visible{
+#theflowdashboard button:focus,
+#theflowdashboard button:focus-visible{
     outline:4px auto -webkit-focus-ring-color
 }
-.nodeStyle{
+#theflowdashboard .nodeStyle{
     color:#eee
 }
-.youownnode{
+#theflowdashboard .youownnode{
     font-size:10px
 }
-.showtokenbuttons{
+#theflowdashboard .showtokenbuttons{
     font-size:10px;
     margin:0 0 -10px
 }
-.buybutton,.sellbutton,.freezebutton,.detailsbutton{
+#theflowdashboard .buybutton,
+#theflowdashboard .sellbutton,
+#theflowdashboard .freezebutton,
+#theflowdashboard .detailsbutton{
     display:inline-block;
     width:55px;
     height:23px;
@@ -428,18 +467,19 @@ button:focus,button:focus-visible{
     background-color:#333;
     color:#fff
 }
-.investcount{
+#theflowdashboard .investcount{
     margin-top:8px;
     font-weight:400
 }
-.buybutton,.sellbutton{
+#theflowdashboard .buybutton,
+#theflowdashboard .sellbutton{
     padding-left:8px
 }
-.detailsbutton{
+#theflowdashboard .detailsbutton{
     width:169px;
     margin-top:3px
 }
-.highlight{
+#theflowdashboard .highlight{
     color:#0f0;
     font-weight:900;
     margin-right:2px
