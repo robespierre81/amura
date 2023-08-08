@@ -5,5 +5,5 @@ class IdAmura {
     public $mail;
     public $password;
     public $repeatpassword;
-    
+    public $activationkey;
 }

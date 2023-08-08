@@ -1,40 +1,29 @@
 <?php
-include 'php/classes/database.class.php';
-include 'php/classes/idamura.class.php';
+include 'classes/database.class.php';
+include 'classes/idamura.class.php';
 
-$isValid = false;
-$id = '';
-$operation = 'none';
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $isValid = true;
-    $firstname = $_SERVER['firstname'];
-    $surname = $_SERVER['surname'];
-    $email = $_SERVER['email'];
-    $password = password_hash($_SERVER['password'], PASSWORD_DEFAULT);
-    $repeatpassword = password_hash($_SERVER['repeatpassword'], PASSWORD_DEFAULT);
-    $operation = $_SERVER['operation'];
-}
-
-// Check if Passwords are correct and in the right length
-if($isValid) {
-    if($repeatpassword != $password) {
-        $isValid = false;
-    }
-}
-
-// check the delivered token 
-if($isValid) {
-    $database = new Database ();
+    $data = json_decode(file_get_contents('php://input'), true);
+    $database = new Database();
     $idamura = new IdAmura();
-    $idamura->firstname = $firstname;
-    $idamura->surname = $surname;
-    $idamura->mail = $email;
-    $idamura->password = $password;
-    $idamura->repeatpassword = $repeatpassword;
+    $operation = $data['operation'];
+    
+    $idamura->mail = $data['email'];
+    $idamura->password = $data['password'];
     
     if($operation == 'newUser') {
+        $idamura->firstname = $data['firstname'];
+        $idamura->surname = $data['surname'];
+        $idamura->repeatpassword = $data['repeatpassword'];
         $database->saveNewUser($idamura);
+    }
+    
+    if($operation == 'loginUser') {
+        $database->checkId($idamura);
     }
 }
 ?>
